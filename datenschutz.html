@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <title>Movie · Datenschutzerklärung</title>
+  <meta name="description" content="Datenschutzerklärung der Movie-App nach DSGVO. Was wir speichern, wo, und welche Rechte du hast.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="brand">
+      <div class="logo">M</div>
+      <a href="index.html" class="brand-link">Movie</a>
+    </header>
+
+    <h1>Datenschutzerklärung</h1>
+    <p class="lead">Diese Erklärung beschreibt, welche Daten die Movie-App verarbeitet, wo sie gespeichert werden und welche Rechte du als Nutzer hast. Stand: 2026.</p>
+
+    <div class="note">
+      <strong>Kurzfassung:</strong> Movie speichert nur die Filme und Serien, die du selbst hinzufügst — plus deine Apple-ID zur Synchronisation. Kein Analytics, keine Werbung, kein Tracking. Du kannst deine Daten jederzeit löschen lassen.
+    </div>
+
+    <h2>1. Verantwortlicher</h2>
+    <p>Verantwortlich für die Datenverarbeitung im Sinne der DSGVO ist:</p>
+    <div class="card">
+      Arthur Wunder<br>
+      <span class="meta">[Anschrift wird im Impressum geführt]</span><br>
+      E-Mail: <a href="mailto:arthurwunder1999@googlemail.com">arthurwunder1999@googlemail.com</a>
+    </div>
+
+    <h2>2. Welche Daten werden verarbeitet?</h2>
+
+    <h3>a) Anmeldung über Apple</h3>
+    <p>Beim ersten Start meldest du dich mit <strong>Anmelden mit Apple</strong> an. Dabei übermittelt Apple einen anonymisierten, app-spezifischen Identifier an Movie. Wir erfahren weder deinen vollen Namen noch deine echte E-Mail-Adresse, sofern du die Verschleierung („Hide my email") aktivierst.</p>
+    <p>Dieser Identifier wird mit deinem Bibliotheks-Eintrag bei Firebase verknüpft, damit deine Daten geräteübergreifend synchron bleiben.</p>
+
+    <h3>b) Deine Filmbibliothek</h3>
+    <p>Wenn du in der App einen Film oder eine Serie hinzufügst, speichern wir:</p>
+    <ul>
+      <li>TMDB-ID des Titels (eine öffentliche Zahl, z.B. <code>550</code> für „Fight Club")</li>
+      <li>Titel, Erscheinungsjahr, Genre-Tags (zur Filterung)</li>
+      <li>Posterpfad (Link auf das öffentliche TMDB-Poster)</li>
+      <li>Deine Sternebewertung (0–5)</li>
+      <li>Ob du den Titel als „gesehen" markiert hast</li>
+      <li>Hinzufügedatum</li>
+    </ul>
+    <p>Außerdem führen wir eine Liste der Titel, die du in den Vorschlägen weggewischt hast — damit dieselben Filme nicht erneut vorgeschlagen werden.</p>
+
+    <h3>c) Was wir <em>nicht</em> erheben</h3>
+    <ul>
+      <li>Keine Standortdaten</li>
+      <li>Keine Kontaktdaten oder Adressbuch-Zugriffe</li>
+      <li>Keine Nutzungs-Analytics, kein Verhalten-Tracking</li>
+      <li>Keine Werbe-IDs, kein App Tracking Transparency-Tracking</li>
+      <li>Keine Crash-Reports an Dritte</li>
+    </ul>
+
+    <h2>3. Wo werden die Daten gespeichert?</h2>
+    <p>Deine Bibliothek wird in <strong>Google Firebase</strong> (Cloud Firestore + Firebase Authentication) gespeichert. Anbieter ist Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland — eine Tochter der Google LLC, USA.</p>
+    <p>Die Datenübertragung erfolgt verschlüsselt (TLS). Zugriff auf deine Bibliothek hat ausschließlich dein eigener Account — die Firestore-Sicherheitsregeln stellen sicher, dass kein anderer Nutzer deine Daten lesen oder ändern kann.</p>
+    <p class="meta">Hinweis: Google speichert Firebase-Daten in der Regel in den USA. Für die Übermittlung gelten die EU-Standardvertragsklauseln (Art. 46 DSGVO).</p>
+
+    <h2>4. Drittanbieter</h2>
+    <div class="card">
+      <h3>Apple (Anmelden mit Apple)</h3>
+      <p>Apple Inc. verarbeitet bei der Anmeldung deine Apple-ID und übergibt uns einen anonymisierten Identifier. Details: <a href="https://www.apple.com/legal/privacy/de-ww/" target="_blank" rel="noopener">Apple Datenschutzrichtlinie</a>.</p>
+    </div>
+
+    <div class="card">
+      <h3>Google Firebase (Auth + Firestore)</h3>
+      <p>Speichert deine Bibliothek und verknüpft sie mit deinem Anmelde-Identifier. Details: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy and Security</a>.</p>
+    </div>
+
+    <div class="card">
+      <h3>The Movie Database (TMDB)</h3>
+      <p>Liefert Filminformationen, Poster und Trailer. Wenn die App ein Filmdetail oder ein Poster lädt, wird dafür ein HTTP-Request an die TMDB-Server geschickt. Dabei wird deine IP-Adresse an TMDB übertragen — Movie selbst sendet keine persönlichen Daten mit. Details: <a href="https://www.themoviedb.org/privacy-policy" target="_blank" rel="noopener">TMDB Privacy Policy</a>.</p>
+    </div>
+
+    <h2>5. Rechtsgrundlage</h2>
+    <p>Die Verarbeitung deiner Bibliotheks-Daten erfolgt auf Grundlage von <strong>Art. 6 Abs. 1 lit. b DSGVO</strong> (Erfüllung des Nutzungsvertrags) — ohne Speicherung deiner gesehenen Filme könnte Movie seine Kernfunktion nicht erfüllen.</p>
+
+    <h2>6. Speicherdauer</h2>
+    <p>Deine Daten bleiben gespeichert, solange dein Account besteht. Wenn du dich aus der App abmeldest, bleiben die Daten erhalten — du kannst dich wieder mit derselben Apple-ID einloggen und alles ist da. Bei vollständiger Löschung deines Accounts (siehe nächster Abschnitt) werden alle Daten innerhalb von 7 Tagen entfernt.</p>
+
+    <h2>7. Deine Rechte</h2>
+    <p>Du hast jederzeit das Recht auf:</p>
+    <ul>
+      <li><strong>Auskunft</strong> über deine gespeicherten Daten (Art. 15 DSGVO)</li>
+      <li><strong>Berichtigung</strong> unrichtiger Daten (Art. 16 DSGVO)</li>
+      <li><strong>Löschung</strong> deiner Daten (Art. 17 DSGVO)</li>
+      <li><strong>Einschränkung</strong> der Verarbeitung (Art. 18 DSGVO)</li>
+      <li><strong>Datenübertragbarkeit</strong> in einem maschinenlesbaren Format (Art. 20 DSGVO)</li>
+      <li><strong>Widerspruch</strong> gegen die Verarbeitung (Art. 21 DSGVO)</li>
+      <li><strong>Beschwerde</strong> bei der zuständigen Datenschutzaufsicht</li>
+    </ul>
+
+    <h2>8. Datenlöschung</h2>
+    <p>Schreib mir eine E-Mail an <a href="mailto:arthurwunder1999@googlemail.com">arthurwunder1999@googlemail.com</a> von der Adresse, die mit deiner Apple-ID verknüpft ist. Ich lösche deinen Firebase-Eintrag inkl. Bibliothek und Dismissed-Liste innerhalb von 7 Tagen und schicke dir eine Bestätigung.</p>
+
+    <h2>9. Kinder</h2>
+    <p>Movie richtet sich nicht gezielt an Kinder unter 13 Jahren. Wir erheben wissentlich keine Daten von Kindern.</p>
+
+    <h2>10. Änderungen dieser Erklärung</h2>
+    <p>Wenn sich an der Datenverarbeitung etwas ändert (z.B. neue Funktionen in der App), wird diese Erklärung aktualisiert. Die jeweils aktuelle Fassung ist immer hier abrufbar.</p>
+
+    <footer>
+      <a href="index.html">Support</a>
+      <a href="datenschutz.html">Datenschutz</a>
+      <a href="impressum.html">Impressum</a>
+    </footer>
+  </div>
+</body>
+</html>
