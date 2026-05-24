@@ -1,6 +1,6 @@
-# Movie · Datenschutz & Support
+# Cneo · Datenschutz & Support
 
-Statische Website für die Movie-iOS-App. Drei Seiten, ein CSS, kein Build-Step.
+Statische Website für die Cneo-iOS-App. Drei Seiten, ein CSS, kein Build-Step.
 
 ## Vorm Veröffentlichen ausfüllen
 
